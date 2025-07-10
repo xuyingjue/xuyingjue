@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>依狸窝 - 首页</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/pages/index/index.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="/imgres/logo.png" alt="依狸窝">
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="/index.html">首页</a></li>
+                <li><a href="/pages/shop/shop.html">点单</a></li>
+                <li><a href="/pages/cart/cart.html">购物车</a></li>
+                <li><a href="/pages/order/order.html">订单</a></li>
+                <li><a href="/pages/mystore/mystore.html">我的店铺</a></li>
+                <li><a href="/pages/me/me.html">我的</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面内容 -->
+    <div class="container">
+        <!-- 顶部轮播图 -->
+        <div class="carousel-container">
+            <div class="swiper" id="bannerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/imgres/1.png" class="carousel-image"></div>
+                    <div class="swiper-slide"><img src="/imgres/2.png" class="carousel-image"></div>
+                    <div class="swiper-slide"><img src="/imgres/3.jpg" class="carousel-image"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- 商品分类入口 - 6宫格 -->
+        <div class="category-container card">
+            <div class="section-title">商品分类</div>
+            <div class="category-grid">
+                <a href="/pages/shop/shop.html?categoryId=1" class="category-item">
+                    <img src="/imgres/z.png" class="category-icon">
+                    <span class="category-name">主题</span>
+                </a>
+                <a href="/pages/shop/shop.html?categoryId=2" class="category-item">
+                    <img src="/imgres/j.png" class="category-icon">
+                    <span class="category-name">键盘</span>
+                </a>
+                <a href="/pages/shop/shop.html?categoryId=3" class="category-item">
+                    <img src="/imgres/m.png" class="category-icon">
+                    <span class="category-name">美化包</span>
+                </a>
+                <a href="/pages/shop/shop.html?categoryId=4" class="category-item">
+                    <img src="/imgres/d.png" class="category-icon">
+                    <span class="category-name">定制v</span>
+                </a>
+                <a href="/pages/shop/shop.html?categoryId=5" class="category-item">
+                    <img src="/imgres/s.png" class="category-icon">
+                    <span class="category-name">水印</span>
+                </a>
+                <a href="/pages/shop/shop.html?categoryId=6" class="category-item">
+                    <img src="/imgres/q.png" class="category-icon">
+                    <span class="category-name">其他</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 店铺选择器 -->
+        <div class="shop-selector card">
+            <div class="picker-content">
+                <select id="shopTypeSelect" class="shop-select">
+                    <option value="0">全部店铺</option>
+                    <option value="1">泉漾</option>
+                    <option value="2">小依美化铺</option>
+                </select>
+                <img src="/imgres/arrow-down.png" class="arrow-icon">
+            </div>
+        </div>
+
+        <!-- 店铺推荐 -->
+        <div class="recommendation-container">
+            <div class="section-header">
+                <span class="section-title">店铺推荐</span>
+            </div>
+            <div class="shop-scroll">
+                <div class="shop-card">
+                    <img src="/imgres/qy.jpg" class="shop-image">
+                    <div class="shop-info">
+                        <span class="shop-name">泉漾</span>
+                        <div class="shop-rating">
+                            <img src="/imgres/star.png" class="star-icon">
+                            <span class="rating-text">4.8</span>
+                            <span class="sales-text">(月销128)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <img src="/imgres/shops/lightfood.png" class="shop-image">
+                    <div class="shop-info">
+                        <span class="shop-name">小依美化铺</span>
+                        <div class="shop-rating">
+                            <img src="/imgres/star.png" class="star-icon">
+                            <span class="rating-text">4.6</span>
+                            <span class="sales-text">(月销96)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <img src="/imgres/d.jpg" class="shop-image">
+                    <div class="shop-info">
+                        <span class="shop-name">待入驻</span>
+                        <div class="shop-rating">
+                            <img src="/imgres/star.png" class="star-icon">
+                            <span class="rating-text">4.7</span>
+                            <span class="sales-text">(月销156)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/swiper.min.js"></script>
+    <script src="/pages/index/index.js"></script>
+</body>
+</html>
